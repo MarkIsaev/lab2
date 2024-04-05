@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Форма отправки</h1>
+    <form action="" method="post">
+        <input type="text" id="number1" name="number1" value="{{request.form['number1']}}">
+        <select name="operator" id="operator">
+            <option {% if request.form['operator'] == '+' %} selected {% endif %} value="+">+</option>
+            <option {% if request.form['operator'] == '-' %} selected {% endif %} value="-">-</option>
+            <option {% if request.form['operator'] == '*' %} selected {% endif %} value="*">*</option>
+            <option {% if request.form['operator'] == '/' %} selected {% endif %} value="/">/</option>
+        </select>
+        <input type="text" id="number2" name="number2" value="{{request.form['number2']}}">
+        <button type="submit"> = </button>
+        <input type="text" id="result" name="result" value="{{res}}" disabled>
+    </form>
+    {% if msg %} <div class="text-danger"> {{msg}}</div> {% endif %}
+{% endblock %}
