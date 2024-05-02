@@ -1,0 +1,62 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Стили навигационного меню */
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #555555;
+}
+
+/* Стили заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+}
+
+/* Стили подвала */
+.footer {
+    background-color: #ffffff;
+    color: #333333;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
